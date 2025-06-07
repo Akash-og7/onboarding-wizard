@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onboarding/Dashboard - Intern project</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/97ebdf5864.js" crossorigin="anonymous">
+    </script>
+</head>
+<body class="">
+    <div class="container">
+
+        <div class="progressbar">
+            <div class="progress-step active" data-tital="Personal">1</div>
+            <div class="progress-step" data-tital="Business">2</div>
+            <div class="progress-step" data-tital="Preferences">3</div>
+           
+        </div>
+
+
+    
+        <!-- Personal-info  -->
+
+        <form id="step1" class="step-form1">
+            <h2>Personal Information</h2>
+            <div class="form-grp" id="name">
+                <input type="text" name="name" required placeholder="Name" autofocus>
+            
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="form-grp">
+                <input type="email" name="email" required placeholder="Email">
+               
+                <i class="fas fa-envelope"></i>
+
+            </div>
+
+               <div>
+                <input id="nxtBtnstep1" type="button" value="Next">
+               </div>
+        </form>
+
+        <!-- business-info  -->
+
+        <form id="step2" class="step-form2">
+            <h2>business information</h2>
+            <div class="form-grp">
+                <input type="text" name="company" required placeholder="Company Name">
+                <i class="fa-solid fa-briefcase"></i>
+            </div>
+            <div class="option">
+                <select  name="
+                industry" required>
+                <option value="">Select Industry</option>
+                <option value="Technology">Technology</option>
+                <option value="Manufacturing">Manufacturing</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Financial Services">Financial Services</option>
+                <option value="Retail & E-commerce"> Retail & E-commerce</option>
+                <option value="Construction">Construction</option>
+                <option value="Other">Other</option>
+            </select>
+
+            </div>
+
+            <div class="option">
+                <select name="
+                employees" required>
+                <option value="">Select Company size</option>
+                <option value="1-50 employees">1-50 employees</option>
+                <option value="50-100 employees">50-100 employees</option>
+                <option value="100-200 employees">100-200 employees</option>
+                <option value="200-300 employees">200-300 employees</option>
+                <option value="300-500 employees">300-500 employees</option>
+                <option value="500-1000 employees">500-1000 employees</option>
+                <option value="1000+ employees">1000+ employees</option>
+            </select>
+            </div>
+            <div class="btn-group">
+                <input id="back-btn-step2" type="button" value="Back">
+                <input id="nxt-btn-step2" type="button" value="Next">
+            </div>
+        </form>
+
+        <!-- preferences -->
+        <form id="step3" class="step-form3">
+            <h2>Preferences</h2>
+          <div class="theme">
+            <div id="pre">
+                <p>Select Theme</p>
+            </div>
+            <div class="sun">
+               <button id="switch">
+                <i class="fa-solid fa-sun"></i>
+                <i class="fa-solid fa-moon"></i>
+               </button>
+            </div>
+          </div>
+
+          <div class="option">
+            <select name="
+                layout" required>
+                <option value="">Dashboard Layout</option>
+                <option value="Grid">Grid</option>
+                <option value="List">List</option>
+            </select>
+
+          </div>
+          
+            <div class="btn-group">
+                <input id="back-btn-step3" type="button" value="Back">
+                <input id="submit-btn-step3" type="button" value="Submit">
+            </div>
+
+        </form>
+
+        <!-- Dashboard-->
+
+        <div id="step4" class="step-form4">
+            <h2>
+                Dashboard
+            </h2>
+           <div class="data">
+           
+            <p>Name              : xyz</p>
+            <p>Email             : xyz</p>
+            <p>Company Name      : xyz</p>
+            <p>Industry          : xyz</p>
+            <p>Employees         : xyz</p>  
+           
+ 
+           </div>
+
+           
+        </div>
+
+        
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
