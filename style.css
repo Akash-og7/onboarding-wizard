@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.darkmode{
+    background-image:url(dark1.jpg);
+}
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background-image:url(light.jpg) ;
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+.container{
+    width: 400px;
+    height: 500px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    border-radius: 40px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 90px;
+    text-align: center;
+}
+
+
+h2{
+    color: white;
+    text-transform: uppercase;
+    padding: 20px ;
+}
+
+.step-form2{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step-form3{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step-form4{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+#nxtBtnstep1{
+    margin: 20px ;
+    width: 310px;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+
+#nxtBtnstep1:hover, #nxt-btn-step2:hover, #back-btn-step2:hover, #back-btn-step3:hover, #submit-btn-step3:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.btn-group{
+    display: flex;
+    justify-content: space-between;
+    width: 310px;
+    margin: 20px;
+}
+
+
+#nxt-btn-step2,#back-btn-step2, #back-btn-step3, #submit-btn-step3{
+
+    width: 47%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+
+}
+
+.form-grp{
+    width: 300px;
+    margin: 20px ;
+    position: relative;
+    border-bottom: 3px solid white;
+}
+
+.form-grp input{
+    width: 240px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 0.9em;
+    color: white;
+    padding: 0 50px 0 10px;
+}
+
+input::placeholder{
+    color: white;
+}
+
+.form-grp i{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 1.2em;
+}
+
+.sun i{
+    color: black;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+#pre{
+    font-weight: bold;
+    color: white;
+    font-size: 1.2em;
+}
+
+.theme{
+    display: flex;
+    align-items: center;
+    margin: 20px auto;
+    justify-content: space-between;
+    width: 210px;
+    padding: 10px 50px;
+    border: 2px solid white;
+    border-radius: 20px;
+
+}
+
+#switch{
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+#switch i:last-child{
+    display: none;
+}
+
+.darkmode #switch i:first-child{
+    display: none;
+}
+
+.darkmode #switch i:last-child{
+    display: block;
+}
+
+
+
+
+.option select{
+    margin: 20px ;
+    width: 310px;
+    height: 50px;
+    border-radius: 20px;
+    border: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px 0;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+.data p{
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 8px;
+    margin: 5px;
+
+}
+
+
+.progressbar {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+    margin: 30px auto 10px;
+}
+
+.progressbar::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    z-index: 0;
+    transform: translateY(-50%);
+}
+
+.progress-step {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+    border-radius: 50%;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.progress-step::after {
+    content: attr(data-title);
+    position: absolute;
+    top: 40px;
+    font-size: 0.7em;
+    color: white;
+    text-align: center;
+    width: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.progress-step.active {
+    background-color: #3498db;
+}
+
+
+
+
+
